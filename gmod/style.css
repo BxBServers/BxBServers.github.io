@@ -11,6 +11,6 @@
   -webkit-border-radius: 10px;
   border-radius: 10px;
   -khtml-border-radius: 10px; /* for old Konqueror browsers */
-  width: 50%; height:50%; margin: 0 auto; background-color:#FFA500 ; 
+  width: 50%; height:auto; margin: 0 auto; background-color:#FFA500 ; 
   } 
   	
