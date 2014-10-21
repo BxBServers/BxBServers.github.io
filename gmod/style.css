@@ -5,12 +5,18 @@
  	} 
   	
   .centerDiv {
+   overflow:hidden;
   box-shadow: 5px 5px 5px #888888;
   padding:10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   -khtml-border-radius: 10px; /* for old Konqueror browsers */
-  width: 50%; height:auto; margin: 0 auto; background-color:#FFA500 ; 
+  width: 50%; 
+  height:50%;
+  min-height:300px; 
+  max-height:2000px; 
+  margin: 0 auto; 
+  background-color:#FFA500 ; 
   } 
   	
