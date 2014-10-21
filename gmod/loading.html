@@ -11,14 +11,31 @@
 
     function init() {
         currMsg = -1;
-        msgArr = Array(' your computer.', 'Uploading ', ' your Bank Account.', 'Installing', 'Stealing your.', 'Kicking you in the balls.', 'Raping your friends.', 'Hunting you down.', 'Stealing your work.', 'Tracing your IP.', 'Stealing your steam account.');
+        msgArr = Array('word1','word2','word3');
         timedMsg();
         var t=setInterval("timedMsg()",2000);
     };
 
     window.onload = init();
     </script>
+<style>
+.vertical-center {
+  height:100%;
+  width:100%;
 
+  text-align: center;  /* align the inline(-block) elements horizontally */
+  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;    /* vertical alignment of the inline element */
+  height: 100%;
+}
+
+
+</style>
   
   
   </head>
@@ -28,7 +45,7 @@ blass
 </div>
   
   
- <img src="http://cloud-4.steampowered.com/ugc/470920662432253995/AEFF0BCECE8BF49706DA9097F0A406E1792377D6/" alt="..." style="height:50%;width:25%;" class="img-responsive img-circle center-block" />
+ <img src="http://cloud-4.steampowered.com/ugc/470920662432253995/AEFF0BCECE8BF49706DA9097F0A406E1792377D6/" alt="..." style="height:50%;width:25%;" class="img-responsive img-circle vertical-center center-block" />
 
   </body>
    
