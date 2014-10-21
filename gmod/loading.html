@@ -1,19 +1,66 @@
-<Html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
   <!-- CSS Files -->
-  <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/slate/bootstrap.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/slate/bootstrap.min.css" rel="stylesheet">
 
   
-  </head>
-<body>
+  <script>
+  
+      function timedMsg() {
+	  if (currMsg == 10) {
+	  end;
+	  } else {
+	  currMsg++
+	  }
 
-</body>
+		var currMsg1 = Number(currMsg) * 1;
+		document.getElementById('progress-bar').innerHTML = currMsg1 +"%";
+        document.getElementById('progress-bar').style.width = currMsg1 +"%";
+    };
+
+    function init() {
+        currMsg = 1;
+        timedMsg();
+        var t=setInterval("timedMsg()",2000);
+    };
+
+    window.onload = init();
+  
+  </script>
+  
+  </head>
+<body onload="init();">
+
+
+<div class="modal show">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="progress">
+    <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="10" aria-valuemax="100" style="width: 100%;">
+    0%
+  </div>
+</div>
    
+   
+   <div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+   
+  </div>
+  </div>
+</div>
+
+
+
+   </body>
 <footer>
   
     <!-- JS Files -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
   </footer>
   
-</Html>
+</html>
