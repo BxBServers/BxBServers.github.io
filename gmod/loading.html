@@ -18,18 +18,25 @@
 
     window.onload = init();
     </script>
-<style>
-.vertical-center {
-  height:100%;
-  width:100%;
-display: inline-block;
-  vertical-align: middle;
-  text-align: center;  /* align the inline(-block) elements horizontally */
-  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+
+  
+  <style>
+  
+	.thumbnail {
+    display:table;
+    border-spacing: 2px;
+    border-collapse: separate;
+    border-radius:10px; /* Demonstrational.. */
 }
-
-
-</style>
+.thumbnail_wrapper {
+    display:table-cell;
+    vertical-align:middle;
+}
+.thumbnail_wrapper > img {
+    width:100%;
+}
+  
+  </style>
   
   
   </head>
@@ -39,7 +46,15 @@ blass
 </div>
   
   
- <img src="http://cloud-4.steampowered.com/ugc/470920662432253995/AEFF0BCECE8BF49706DA9097F0A406E1792377D6/" alt="..." style="height:50%;width:25%;" class="img-responsive img-circle vertical-center center-block" />
+  
+  <div class="thumbnail" style="width: 400px; height: 400px">
+    <div class="thumbnail_wrapper">
+      <img src="http://cloud-4.steampowered.com/ugc/470920662432253995/AEFF0BCECE8BF49706DA9097F0A406E1792377D6/" alt="..." style="height:50%;width:25%;" class="img-responsive img-circle center-block" />
+
+    </div>
+</div>
+  
+  
 
   </body>
    
