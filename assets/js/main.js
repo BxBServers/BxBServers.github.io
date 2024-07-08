@@ -46,10 +46,10 @@
 							'images/pv2_2.png': 'center',
 							'images/pvr_1.png': 'center',
 
-							'images/1.png': 'center',
-							'images/2.png': 'center',
-							'images/3.png': 'center',
-							'images/4.png': 'center',
+							'images/1.jpg': 'center',
+							'images/2.jpg': 'center',
+							'images/3.jpg': 'center',
+							'images/4.jpg': 'center',
 						},
 
 					// Delay.
