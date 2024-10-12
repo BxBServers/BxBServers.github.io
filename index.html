@@ -16,12 +16,29 @@
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 </head>
 
-<body>
+<body style="justify-content: space-between;">
 
 	<!-- Header -->
-	<header id="header">
+	<header id="header" style="margin: auto 0;">
 		<h1>Block by Block</h1>
 	</header>
+
+	<footer>
+		<p style="margin: 0;">
+			pls send more screenshots to <span id="em"></span>
+			or <a
+				href="https://github.com/bxbservers/bxbservers.github.io">https://github.com/bxbservers/bxbservers.github.io</a>
+			ty :)
+		</p>
+
+		<script>
+			(() => {
+				let e = ["bxbservers.com", "gary"].reverse().join(String.fromCharCode(64));
+				let m = ["lto", "mai"].reverse().join``;
+				document.getElementById("em").innerHTML = `<a href="${m}:${e}">${e}</a>`;
+			})();
+		</script>
+	</footer>
 
 	<!-- Scripts -->
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
