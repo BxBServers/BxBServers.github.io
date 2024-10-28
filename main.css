@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+span[title] {
+    text-decoration: underline dashed;
+}
+
+section.hero {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    height: 100vh;
+    min-height: 250px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+@media (hover: none) {
+    section.hero {
+        background-attachment: initial;
+    }
+}
+
+section.hero h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: calc(0.75em + 5vw);
+    text-transform: uppercase;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+section.hero h2 {
+    font-size: calc(0.5em + 1.75vw);
+    font-style: italic;
+    text-align: right;
+}
+
+section.hero .hint {
+    position: absolute;
+    bottom: -50px;
+    font-size: 4em;
+    transform: scaleY(-1);
+}
+
+section.text {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 650px) {
+    section.text {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+section h2 {
+    margin: 20px 0;
+}
+
+.downloads {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.download p,
+.download dl {
+    font-size: 0.85em;
+    margin-left: 20px;
+}
+
+.download dl {
+    display: grid;
+    gap: 0 10px;
+    grid-template: auto / max-content auto;
+}
+
+@media screen and (max-width: 450px) {
+    .download dl {
+        grid-template-columns: auto;
+    }
+
+    .download dt {
+        margin-top: 10px;
+        text-align: unset !important;
+    }
+}
+
+.download dt {
+    font-weight: 600;
+    text-align: right;
+}
+
+.download dt::after {
+    content: ':';
+}
