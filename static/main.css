@@ -102,9 +102,8 @@ section.hero h2 {
 
 section.hero .hint {
     position: absolute;
-    bottom: -50px;
-    font-size: 4em;
-    transform: scaleY(-1);
+    bottom: 0px;
+    width: 50px;
 }
 
 section.cards {
