@@ -28,7 +28,7 @@ build-images:
                     
                 magick \
                     -define png:size=512x512 "$image" \
-                    -thumbnail "$size^" -gravity center -extent "$size"  \
+                    -thumbnail "$size^" -gravity center -extent "$size" \
                     "static/images/thumbs/$size/$image_name.$format";
             done;
 
