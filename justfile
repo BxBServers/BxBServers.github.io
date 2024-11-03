@@ -44,7 +44,7 @@ render-index:
 render-all:
     just render-index
 
-    for server in {pv,pv2,pv_reloaded,tvl2014,pv_remastered,vp,tvl2015,g2m}; do \
+    for server in {bbb,pv,pv2,pv_reloaded,tvl2014,pv_remastered,vp,tvl2015,g2m}; do \
         mkdir -p out/$server; \
         just render-server $server; \
     done
