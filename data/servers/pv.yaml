@@ -1,0 +1,20 @@
+name: "Project Vanilla"
+date: "21st Dec. 2012"
+downloads:
+  "Released World":
+    url: "https://archive.bxbservers.com/ProjectVanilla_1.zip"
+    provider: "<span title=\"Thank you amos!\">amosfriend</span>"
+    version: "1.8 - 1.8.9"
+    hashes:
+      md5: "https://archive.bxbservers.com/ProjectVanilla_1.zip.md5"
+      sha1: "https://archive.bxbservers.com/ProjectVanilla_1.zip.sha1"
+    note: "This is the version that we originally released and was unfortunately loaded with <span title=\"or somewhere between 1.8 & 1.8.9\">1.8</span> before being created. It has some chunks saved with 1.8 and others saved with 1.4.6. Older versions of Minecraft will fail to load the new chunks and reset them and newer versions of Minecraft will load but there will be errors and inconsistencies."
+  "Downgraded World":
+    url: "https://archive.bxbservers.com/ProjectVanilla_1.downgraded.zip"
+    # provider: "gary"
+    version: "1.4.6/1.4.7"
+    hashes:
+      md5: "https://archive.bxbservers.com/ProjectVanilla_1.downgraded.zip.md5"
+      sha1: "https://archive.bxbservers.com/ProjectVanilla_1.downgraded.zip.sha1"
+    note: "This version is a best attempt at downgrading from the released version. It may have some subtle inconsistencies but otherwise works well."
+media:
