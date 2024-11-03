@@ -1,0 +1,11 @@
+name: "Project Vanilla: Remastered"
+date: "28 Feb. 2015"
+downloads:
+  "World":
+    url: "https://archive.bxbservers.com/ProjectVanilla_Remastered.zip"
+    provider: "<span title=\"Thank you amos!\">amosfriend</span>"
+    version: "1.8.3"
+    hashes:
+      md5: "https://archive.bxbservers.com/ProjectVanilla_Remastered.zip.md5"
+      sha1: "https://archive.bxbservers.com/ProjectVanilla_Remastered.zip.sha1"
+media:
