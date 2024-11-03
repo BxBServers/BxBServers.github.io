@@ -7,10 +7,22 @@
 } %}
 
 {% block content %}
+<style>
+</style>
+
 <section class="cards">
     {% for server in servers %}
-    <a class="card" href="/{{ server.path }}/"
-        style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(/images/thumbs/{{ server.thumbnail }}.png);">
+    <a class="card" href="/{{ server.path }}/">
+        <picture class="background">
+            <source srcset="
+                /images/thumbs/256x256/{{ server.thumbnail }}.webp 256w,
+                /images/thumbs/512x512/{{ server.thumbnail }}.webp 512w" type="image/webp" />
+            <source srcset="
+                /images/thumbs/256x256/{{ server.thumbnail }}.jpg 256w,
+                /images/thumbs/512x512/{{ server.thumbnail }}.jpg 512w" type="image/jpeg" />
+            <img src="/images/thumbs/{{ server.thumbnail }}.jpg" />
+        </picture>
+
         <span class="title">{{ server.name }}</span>
         <span class="subtext">{{ server.date }}</span>
     </a>

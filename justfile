@@ -2,8 +2,6 @@ build:
     mkdir -p out
     cp -r static/* out/
     just render-all
-    mkdir -p out/images/thumbs/
-    just build-thumbs
 
 clean:
     rm -fr out/*
@@ -11,12 +9,30 @@ clean:
 dev:
     watchexec --ignore out -- "just clean; just build"
 
-build-thumbs:
-    for image in out/images/4k/*.png; do \
-        magick \
-            -define png:size=512x512 $image \
-            -thumbnail 256x256^ -gravity center -extent 256x256 \
-            $(echo $image | sed "s#4k#thumbs#"); \
+build-images:
+    #!/usr/bin/env sh
+
+    for image in images/servers/*.png; do
+        image_file_name=$(basename -- "$image");
+        image_name="${image_file_name%.*}";
+        echo "building image $image_name...";
+    
+        for format in {jpg,webp}; do
+            for size in {1280x720,1920x1080,3840x2160}; do
+                mkdir -p "static/images/$size/";
+                magick "$image" -resize $size "static/images/$size/$image_name.$format";
+            done;
+
+            for size in {256x256,512x512}; do
+                mkdir -p "static/images/thumbs/$size/";
+                    
+                magick \
+                    -define png:size=512x512 "$image" \
+                    -thumbnail "$size^" -gravity center -extent "$size"  \
+                    "static/images/thumbs/$size/$image_name.$format";
+            done;
+
+        done;
     done
 
 render-server server:

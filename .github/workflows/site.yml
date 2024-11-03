@@ -35,6 +35,9 @@ jobs:
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
         
+      - name: Build Images
+        run: nix develop --command just build-images
+
       - name: Build Site
         run: nix develop --command just build
 

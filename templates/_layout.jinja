@@ -16,8 +16,20 @@
 </head>
 
 <body>
-    <section class="hero"
-        style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(/images/4k/{{ hero.background }}.png);">
+    <section class="hero">
+        <picture class="background">
+            <source srcset="
+                /images/1280x720/{{ hero.background }}.webp 1280w,
+                /images/1920x1080/{{ hero.background }}.webp 1920w,
+                /images/3840x2160/{{ hero.background }}.webp 3840w" type="image/webp" />
+            <source srcset="
+                /images/1280x720/{{ hero.background }}.jpg 1280w,
+                /images/1920x1080/{{ hero.background }}.jpg 1920w,
+                /images/3840x2160/{{ hero.background }}.jpg 3840w" type="image/jpeg" />
+
+            <img src="/images/1920x1080/{{ hero.background }}.jpg" />
+        </picture>
+
         <div>
             <h1>{{ hero.title }}</h1>
             <h2>{{ hero.subtext }}</h2>
