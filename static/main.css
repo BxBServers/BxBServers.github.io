@@ -55,6 +55,7 @@ section.hero {
     height: 100vh;
     min-height: 250px;
     margin: 0;
+    padding: 10%;
 
     display: flex;
     align-items: center;
