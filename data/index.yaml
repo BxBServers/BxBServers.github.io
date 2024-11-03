@@ -9,20 +9,20 @@ servers:
     date: "14th June 2013"
     thumbnail: "pv2"
 
-  # - name: "PV: Reloaded"
-  #   path: "pv_reloaded"
-  #   date: "12 Dec. 2013"
-  #   thumbnail: "default"
+  - name: "PV: Reloaded"
+    path: "pv_reloaded"
+    date: "12 Dec. 2013"
+    thumbnail: "pv_reloaded"
 
   - name: "TVL (2014)"
     path: "tvl2014"
     date: "22 Nov. 2014"
     thumbnail: "tvl2014"
 
-  - name: "PV: Remastered"
-    path: "pv_remastered"
-    date: "28 Feb. 2015"
-    thumbnail: "pv_remastered"
+  # - name: "PV: Remastered"
+  #   path: "pv_remastered"
+  #   date: "28 Feb. 2015"
+  #   thumbnail: "default"
 
   # - name: "V+"
   #   path: "vp"

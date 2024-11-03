@@ -5,7 +5,7 @@
 ✔ support multiple background image sizes and formats @done(24-11-03 17:23)
 ✔ compress images @done(24-11-03 17:23)
 ☐ redo all the background images (except maybe pv1?)
-☐ check pv remastered is actually remastered not reloaded and i just named it wrong
+✔ check pv remastered is actually remastered not reloaded and i just named it wrong @done(24-11-03 17:47)
 ✔ max width on server name (pvrem) (or just some amount of padding) @done(24-11-03 14:54)
 ☐ maps?
 ✔ don't load all weights of fonts @done(24-11-03 15:24)
