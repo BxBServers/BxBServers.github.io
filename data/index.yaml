@@ -1,0 +1,40 @@
+servers:
+  - name: "PV"
+    path: "pv"
+    date: "21st Dec. 2012"
+    thumbnail: "pv"
+
+  - name: "PV: 2"
+    path: "pv2"
+    date: "14th June 2013"
+    thumbnail: "pv2"
+
+  # - name: "PV: Reloaded"
+  #   path: "pv_reloaded"
+  #   date: "12 Dec. 2013"
+  #   thumbnail: "default"
+
+  - name: "TVL (2014)"
+    path: "tvl2014"
+    date: "22 Nov. 2014"
+    thumbnail: "tvl2014"
+
+  - name: "PV: Remastered"
+    path: "pv_remastered"
+    date: "28 Feb. 2015"
+    thumbnail: "pv_remastered"
+
+  # - name: "V+"
+  #   path: "vp"
+  #   date: "06 June 2015"
+  #   thumbnail: "default"
+
+  # - name: "TVL (2015)"
+  #   path: "tvl2015"
+  #   date: "11 Oct. 2015"
+  #   thumbnail: "default"
+
+  # - name: "G2M"
+  #   path: "g2m"
+  #   date: "19 Feb. 2016"
+  #   thumbnail: "default"

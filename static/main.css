@@ -22,6 +22,30 @@ span[title] {
     text-decoration: underline dashed;
 }
 
+section {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1200px) {
+    section {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+section h2 {
+    margin: 20px 0;
+}
+
 section.hero {
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -37,6 +61,7 @@ section.hero {
     justify-content: center;
 
     color: white;
+    font-size: 1em;
 }
 
 @media (hover: none) {
@@ -67,21 +92,54 @@ section.hero .hint {
     transform: scaleY(-1);
 }
 
-section.text {
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 1.5em;
+section.cards {
+    display: grid;
+    gap: 15px;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
 }
 
-@media screen and (max-width: 650px) {
-    section.text {
-        margin-left: 10%;
-        margin-right: 10%;
+section.cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    aspect-ratio: 1/1;
+    padding: 15px;
+
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 10px;
+    box-shadow: -2px 4px 15px rgb(0 0 0 / 26%);
+}
+
+@media screen and (max-width: 1000px) {
+    section.cards {
+        grid-template: auto / 1fr 1fr 1fr;
     }
 }
 
-section h2 {
-    margin: 20px 0;
+@media screen and (max-width: 750px) {
+    section.cards {
+        grid-template: auto / 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    section.cards {
+        grid-template: auto / 1fr;
+    }
+}
+
+section.cards .card .title {
+    font-weight: bold;
+}
+
+section.cards .card .subtext {
+    font-size: 0.75em;
 }
 
 .downloads {

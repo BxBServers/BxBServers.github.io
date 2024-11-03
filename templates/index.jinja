@@ -1,0 +1,19 @@
+{% extends "_layout.jinja" %}
+
+{% block title %}Block by Block{% endblock %}
+{% set hero = {
+"background": "default",
+"title": "Block by Block",
+} %}
+
+{% block content %}
+<section class="cards">
+    {% for server in servers %}
+    <a class="card" href="/{{ server.path }}/"
+        style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(/images/thumbs/{{ server.thumbnail }}.png);">
+        <span class="title">{{ server.name }}</span>
+        <span class="subtext">{{ server.date }}</span>
+    </a>
+    {% endfor %}
+</section>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "_layout.jinja" %}
+
+{% block title %}Block by Block - {{ name }}{% endblock %}
+{% set hero = {
+"background": background,
+"title": name,
+"subtext": date
+} %}
+
+{% block content %}
+{%- if downloads %}
+<section class="text">
+    {# <h2>Downloads</h2> #}
+    <div class="downloads">
+        {%- for download_name in downloads %}
+        {%- set download = downloads[download_name] %}
+        <div class="download">
+            <h3><a href="{{ download.url }}" target="_blank" rel="noopener noreferrer">{{ download_name }}</a></h3>
+            {%- if download.provider %}
+            <p>Provided by {{ download.provider }}.</p>
+            {%- endif %}
+            <dl>
+                <dt>Version</dt>
+                <dd>{{ download.version }}</dd>
+                <dt>Hashes</dt>
+                <dd>
+                    {%- for hash_kind in download.hashes %}
+                    <a href="{{ download.hashes[hash_kind] }}" target="_blank" rel="noopener noreferrer">{{
+                        hash_kind }}</a>
+                    {%- endfor %}
+                </dd>
+                {%- if download.note %}
+                <dt>Note</dt>
+                <dd>{{ download.note }}</dd>
+                {%- endif %}
+            </dl>
+        </div>
+        {%- endfor %}
+    </div>
+</section>
+{%- endif %}
+{% endblock %}
