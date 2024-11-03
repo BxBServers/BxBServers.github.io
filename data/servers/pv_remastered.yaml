@@ -1,5 +1,6 @@
 name: "Project Vanilla: Remastered"
 date: "28 Feb. 2015"
+background: "pv_remastered"
 downloads:
   "World":
     url: "https://archive.bxbservers.com/ProjectVanilla_Remastered.zip"
