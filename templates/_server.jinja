@@ -27,7 +27,7 @@
 
     {%- if downloads %}
     <section class="text">
-        <h2>Downloads</h2>
+        {# <h2>Downloads</h2> #}
         <div class="downloads">
             {%- for download_name in downloads %}
             {%- set download = downloads[download_name] %}
@@ -39,7 +39,6 @@
                 <dl>
                     <dt>Version</dt>
                     <dd>{{ download.version }}</dd>
-
                     <dt>Hashes</dt>
                     <dd>
                         {%- for hash_kind in download.hashes %}
@@ -47,9 +46,10 @@
                             hash_kind }}</a>
                         {%- endfor %}
                     </dd>
-
+                    {%- if download.note %}
                     <dt>Note</dt>
                     <dd>{{ download.note }}</dd>
+                    {%- endif %}
                 </dl>
             </div>
             {%- endfor %}
