@@ -16,7 +16,7 @@
       system: let
         pkgs = import nixpkgs { inherit system; };
 
-        nativeBuildInputs = with pkgs; [just minijinja watchexec];
+        nativeBuildInputs = with pkgs; [just minijinja watchexec imagemagick];
         buildInputs = with pkgs; [];
       in
         with pkgs; {
