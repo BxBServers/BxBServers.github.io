@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 section {
@@ -136,11 +137,12 @@ section.cards .card {
 }
 
 section.cards .card .title {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 section.cards .card .subtext {
     font-size: 0.75em;
+    font-style: italic;
 }
 
 .downloads {
@@ -173,7 +175,7 @@ section.cards .card .subtext {
 }
 
 .download dt {
-    font-weight: 600;
+    font-weight: 500;
     text-align: right;
 }
 
